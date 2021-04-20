@@ -1,6 +1,6 @@
 const Employee = require('../models/Employee');
 const LoggedIn = require('../models/LoggedIn');
-//one last time
+
 async function login (req, res) {
 
     const tryingToLogIn = await Employee.findOne({id: req.params.identification});
