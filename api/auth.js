@@ -1,6 +1,5 @@
 const Employee = require('../models/Employee');
 const LoggedIn = require('../models/LoggedIn');
-// I made a comment
 
 async function login (req, res) {
 
