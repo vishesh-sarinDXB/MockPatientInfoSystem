@@ -1,0 +1,28 @@
+{
+  "name": "patinfosysapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "mocha --exit --timeout 15000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab-student.macs.hw.ac.uk:vs62/f21ao_cw_patientinfosystem.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "config": "^3.3.3",
+    "express": "^4.17.1",
+    "helmet": "^4.4.1",
+    "mongoose": "^5.11.17",
+    "nodemon": "^2.0.7"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "chai-http": "^4.3.0",
+    "mocha": "^8.3.2"
+  }
+}

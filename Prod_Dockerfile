@@ -1,0 +1,11 @@
+FROM node:latest
+WORKDIR ./patInfoSysApp
+COPY package.json .
+COPY /api ./api
+COPY /config ./config
+COPY /models ./models
+COPY index.js .
+COPY route.js .
+RUN npm install --only=prod
+EXPOSE 5000
+CMD ["npm", "start"]
