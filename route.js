@@ -1,6 +1,7 @@
 const auth = require('./api/auth.js');
 const pat = require('./api/pat.js');
 const pages = require('./api/pages.js');
+const admn = require('./api/admin.js');
 const express = require('express');
 const helmet = require("helmet");
 
@@ -35,5 +36,6 @@ module.exports = function(app){
     app.get('/updatePatient/:identification/:patID', pat.updatePatient);
     app.get('/newPatient', pages.newPatientPage);
     app.get('/newPatient/:identification', pat.newPatient);
+    app.get('/newEmployee/:identification', admn.newEmployee);
 
 }
