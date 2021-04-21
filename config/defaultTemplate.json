@@ -1,0 +1,3 @@
+{
+    "mongoURI": "Your Mongo URI Here, Also rename this file to default.json"
+}
